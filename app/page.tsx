@@ -61,7 +61,7 @@ export default function Home() {
       key: "download",
       label: (
         <span className="inline-flex">
-          <a href="/Fullstack_ThanyapornMusikpodok.pdf" download onClick={(e) => e.stopPropagation()}>
+          <a href="/cv.pdf" download onClick={(e) => e.stopPropagation()}>
             <Button shape="round" size="small">Download CV</Button>
           </a>
         </span>
@@ -136,7 +136,7 @@ export default function Home() {
             </Col>
             <Col>
               <Space>
-                <a href="/Fullstack_ThanyapornMusikpodok.pdf" download>
+                <a href="/cv.pdf" download>
                   <Button shape="round" className="h-10 px-5 text-base md:text-lg">Download CV</Button>
                 </a>
                 <Switch

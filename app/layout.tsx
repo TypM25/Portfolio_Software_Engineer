@@ -9,9 +9,13 @@ export const metadata: Metadata = {
   title: "Portfolio | Full Stack Developer",
   description: "Portfolio of a full stack developer with a focus on React, Next.js, and Node.js",
   icons: {
-    icon: "/icon.png",
-    apple: "/icon.png",
-    shortcut: "/icon.png",
+    icon: [
+      { url: "/icon.png", type: "image/png", sizes: "16x16" },
+      { url: "/icon.png", type: "image/png", sizes: "32x32" },
+      { url: "/icon.png", type: "image/png" },
+    ],
+    apple: [{ url: "/icon.png", sizes: "180x180" }],
+    shortcut: [{ url: "/icon.png" }],
   },
 };
 
@@ -28,6 +32,11 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
           rel="stylesheet"
         />
+        <link rel="icon" href="/icon.png" type="image/png" sizes="16x16" />
+        <link rel="icon" href="/icon.png" type="image/png" sizes="32x32" />
+        <link rel="icon" href="/icon.png" type="image/png" sizes="any" />
+        <link rel="shortcut icon" href="/icon.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/icon.png" sizes="180x180" />
       </head>
       <body className={`antialiased`}>
         <ConfigProvider
