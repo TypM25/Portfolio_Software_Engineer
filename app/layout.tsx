@@ -1,16 +1,9 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import "@ant-design/v5-patch-for-react-19";
+import "antd/dist/reset.css";
+import { ConfigProvider, theme } from "antd";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,10 +17,27 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <head>
+        <link href="https://fonts.cdnfonts.com/css/golane" rel="stylesheet" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body className={`antialiased`}>
+        <ConfigProvider
+          theme={{
+            algorithm: theme.defaultAlgorithm,
+            token: {
+              colorPrimary: "#4C8DFF",
+              borderRadius: 12,
+              fontFamily:
+                "Golane, Montserrat, Poppins, Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif",
+            },
+          }}
+        >
+          {children}
+        </ConfigProvider>
       </body>
     </html>
   );
