@@ -9,9 +9,9 @@ export default function Hero() {
           <h1 className="text-5xl md:text-6xl font-bold tracking-tight m-0">
             Hello! I’m Pin.
           </h1>
-          <p className="text-xl md:text-2xl">Full‑Stack Developer</p>
+          <p className="text-xl md:text-2xl">Software Engineer</p>
           <p className="text-zinc-600 md:text-xl max-w-[520px]">
-            Computer Engineering student with hands‑on experience in full‑stack web development and IoT projects. Proficient in React, Next.js, Node.js, and PostgreSQL.
+            Computer Engineering student with hands‑on experience in Software Engineer web development and IoT projects. Proficient in React, Next.js, Node.js, and PostgreSQL.
           </p>
           
           <Space wrap>

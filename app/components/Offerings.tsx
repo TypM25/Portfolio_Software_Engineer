@@ -14,7 +14,7 @@ export default function Offerings() {
     return () => io.disconnect();
   }, []);
   const items = [
-    { title: "Full‑stack Web Development", desc: "React, Next.js, Node.js, PostgreSQL" },
+    { title: "Web Development", desc: "React, Next.js, Node.js, PostgreSQL" },
     { title: "Dashboards & Data Visualization", desc: "Admin panels, charts, filters" },
     { title: "Desktop/IoT Integrations", desc: "Electron.js, Arduino sensors" },
   ];

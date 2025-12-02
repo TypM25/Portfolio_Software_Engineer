@@ -6,8 +6,8 @@ import { ConfigProvider, theme } from "antd";
 
 
 export const metadata: Metadata = {
-  title: "Portfolio | Full Stack Developer",
-  description: "Portfolio of a full stack developer with a focus on React, Next.js, and Node.js",
+  title: "Portfolio | Software Engineer",
+  description: "Portfolio of a software engineer focused on scalable systems, React, Next.js, and Node.js",
   icons: {
     icon: [
       { url: "/icon.png", type: "image/png", sizes: "16x16" },
