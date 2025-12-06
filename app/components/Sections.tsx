@@ -39,7 +39,7 @@ export function SkillsScroll() {
     "Frameworks & Libraries": ["React", "Next.js", "Node.js (Express.js)", "Sequelize ORM", "MUI", "TailwindCSS", "Bootstrap"],
     Database: ["PostgreSQL"],
     "DevOps & Tools": ["Git", "Docker", "Postman", "Figma"],
-    Others: ["Electron.js", "C# (WPF)", "Arduino"],
+    Others: ["Electron.js", "Arduino"],
   };
 
   return (
