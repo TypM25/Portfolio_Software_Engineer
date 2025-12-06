@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 import CaseStudyGrid from "../components/CaseStudyGrid";
 
 export default function Projects() {
